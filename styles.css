@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 .banner {
-    background-image: url('banner-bg.jpg'); /* nazwa pliku tła */
+    background-image: url('banner-bg.webp'); /* nazwa pliku tła */
     background-size: cover;
     background-position: center;
     color: white;
