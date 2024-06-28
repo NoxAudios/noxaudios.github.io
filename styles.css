@@ -102,7 +102,7 @@ nav ul li a {
 .divcytat {
     background-color: #7e7e7e31; /* Szary kolor tła */
     border-radius: 10px; /* Zaokrąglone krawędzie */
-    width: 480px; /* Szerokość 300 px */
+    width: 300px; /* Szerokość 300 px */
     margin: 0 auto; /* Wycentrowanie */
     padding: 20px; /* Opcjonalne: Dodanie wewnętrznego marginesu dla lepszego wyglądu */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcjonalne: Dodanie delikatnego cienia dla głębi */
@@ -126,4 +126,114 @@ nav ul li a {
 .owners {
 text-align: center;
 font-style: bold;
+}
+
+/* styles.css */
+.onas-section {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.onas-left {
+    flex: 1;
+    max-width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.onas-right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.onas-image {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.onas-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.onas-caption h2 {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+.onas-caption p {
+    margin: 0;
+    font-size: 18px;
+    color: #777;
+}
+
+.onas-social-links {
+    margin-top: 20px;
+}
+
+.onas-social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.onas-social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* styles.css */
+.kontakt-section {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.kontakt-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kontakt-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.kontakt-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.kontakt-email {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.kontakt-email:hover {
+    text-decoration: underline;
+}
+
+.kontakt-social-links {
+    margin-top: 20px;
+}
+
+.kontakt-social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0073b1;
+}
+
+.kontakt-social-links a:hover {
+    text-decoration: underline;
 }
