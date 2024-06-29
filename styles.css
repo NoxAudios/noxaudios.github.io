@@ -244,3 +244,46 @@ font-style: bold;
     background-color: #000; /* Czarna linia */
     margin: 20px 0; /* Margines góra-dół */
 }
+
+.privacy-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.privacy-notice p {
+    margin: 0;
+    padding: 0;
+}
+
+.privacy-notice a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.privacy-notice a:hover {
+    text-decoration: underline;
+}
+
+.privacy-notice button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.privacy-notice button:hover {
+    background-color: #0077cc;
+}
+
+.hidden {
+    display: none;
+}
