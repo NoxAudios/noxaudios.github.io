@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: white;
 }
 
 header {
@@ -344,4 +344,83 @@ footer {
 
 .buy-button:hover {
     background-color: #0056b3;
+}
+
+
+.indexpromo-image-section {
+    position: relative;
+    height: 500px; /* Wysokość kontenera */
+    background-color: #ffffff; /* Neutralne tło sekcji */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .indexpromo-square {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    z-index: 0.6;
+  }
+  
+  /* Style dla pierwszego kwadratu */
+  .square1 {
+    background-color: #86A3C3; /* Czerwony */
+    top: 50px;
+    left: 550px;
+    width: 350px;
+    height: 350px;
+    transform: rotate(0deg); /* Obrót, aby uzyskać efekt */
+  }
+  
+  /* Style dla drugiego kwadratu */
+  .square2 {
+    background-color: #6B3074; /* Niebieski */
+    top: 110px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(0deg); /* Inny obrót */
+  }
+  
+  /* Style dla trzeciego kwadratu */
+  .square3 {
+    background-color: #7268A6; /* Zielony */
+    top: 180px;
+    left: 320px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(0deg); /* Jeszcze inny obrót */
+  }
+  
+  .indexpromo-image-section img {
+    position: relative;
+    z-index: 2; /* Obrazek nad kwadratami */
+    max-width: 800px; /* Maksymalna szerokość obrazu */
+  }
+
+  .invite {
+    background-color: #7289da;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.invite h2 {
+    margin: 0 0 10px 0;
+}
+.invite a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #5865f2;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.invite a:hover {
+    background-color: #4752c4;
 }
