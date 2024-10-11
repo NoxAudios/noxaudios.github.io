@@ -1,3 +1,13 @@
+.banner {
+    background-image: url('banner-bg.webp'); /* nazwa pliku tła */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,14 +47,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.banner {
-    background-image: url('banner-bg.webp'); /* nazwa pliku tła */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-}
 
 .info {
     text-align: center;
@@ -423,4 +425,33 @@ footer {
 }
 .invite a:hover {
     background-color: #4752c4;
+}
+
+#about-nox {
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.nox-team-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.nox-team-description h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.nox-team-description p {
+    font-size: 16px;
+    color: #333;
+}
+.name {
+    font-weight: bold;
 }
