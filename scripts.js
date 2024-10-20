@@ -20,7 +20,7 @@ function createLeaf() {
     // Ustaw losową pozycję startową z góry
     leaf.style.left = Math.random() * window.innerWidth + 'px';
     leaf.style.top = '-50px'; // Ustawiamy liść, aby zaczynał nad ekranem
-    leaf.style.animationDuration = (Math.random() * 5 + 3) + 's'; // Czas spadania (3-8s)
+    leaf.style.animationDuration = (Math.random() * 8 + 15) + 's'; // Czas spadania (3-8s)
     leaf.style.animationName = 'fall';
 
     document.body.appendChild(leaf);
@@ -32,4 +32,4 @@ function createLeaf() {
 }
 
 // Twórz liście co 500ms
-setInterval(createLeaf, 500);
+setInterval(createLeaf, 300);
