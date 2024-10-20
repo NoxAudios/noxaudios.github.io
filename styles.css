@@ -185,7 +185,7 @@ font-style: bold;
 .onas-social-links a {
     margin-right: 10px;
     text-decoration: none;
-    color: #0073b1;
+    color: #e4ae1c;
 }
 
 .onas-social-links a:hover {
@@ -218,7 +218,7 @@ font-style: bold;
 }
 
 .kontakt-email {
-    color: #0073b1;
+    color: #e4ae1c;
     text-decoration: none;
 }
 
@@ -265,7 +265,7 @@ font-style: bold;
 }
 
 .privacy-notice a {
-    color: #00aaff;
+    color: #f0ca62;
     text-decoration: none;
 }
 
@@ -276,14 +276,14 @@ font-style: bold;
 .privacy-notice button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #00aaff;
+    background-color: #e4ae1c;
     border: none;
     color: white;
     cursor: pointer;
 }
 
 .privacy-notice button:hover {
-    background-color: #0077cc;
+    background-color: #e4ae1c;
 }
 
 .hidden {
@@ -336,7 +336,7 @@ footer {
 .buy-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #e4ae1c;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -345,7 +345,7 @@ footer {
 }
 
 .buy-button:hover {
-    background-color: #0056b3;
+    background-color: #e4ae1c;
 }
 
 
@@ -404,7 +404,7 @@ footer {
   }
 
   .invite {
-    background-color: #7289da;
+    background-color: #dab972;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -422,12 +422,12 @@ footer {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #5865f2;
+    background-color: #e4ae1c;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 .invite a:hover {
-    background-color: #4752c4;
+    background-color: #e4ae1c;
     
 }
 
