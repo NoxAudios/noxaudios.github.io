@@ -459,3 +459,23 @@ footer {
 .name {
     font-weight: bold;
 }
+
+/*Haloween*/
+.leaf {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('leaves.webp'); /* Podmień na swoją grafikę liścia */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateY(180vh) rotate(360deg); /* Liść opada do pełnej wysokości widoku */
+    }
+}
