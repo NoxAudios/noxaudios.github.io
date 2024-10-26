@@ -1,12 +1,11 @@
 .banner {
-    background-image: url('banner-bg-jesien.webp.webp'); /* nazwa pliku tła */
+    background-image: url('banner-bg-jesien.webp'); /* nazwa pliku tła */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     padding: 2rem 0;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -352,7 +351,7 @@ footer {
 .indexpromo-image-section {
     position: relative;
     height: 500px; /* Wysokość kontenera */
-    background-color: #ffffff; /* Neutralne tło sekcji */
+    /*background-color: #e7e7e7; /* Neutralne tło sekcji */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -401,6 +400,7 @@ footer {
     position: relative;
     z-index: 2; /* Obrazek nad kwadratami */
     max-width: 800px; /* Maksymalna szerokość obrazu */
+
   }
 
   .invite {
@@ -469,6 +469,7 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.8;
+    z-index:-999999;
 }
 
 @keyframes fall {
@@ -479,3 +480,45 @@ footer {
         transform: translateY(180vh) rotate(360deg); /* Liść opada do pełnej wysokości widoku */
     }
 }
+
+.menusocials {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menusocials a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.menusocials a:hover {
+    background-color: #555;
+}
+
+.menusocials a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Dodatkowe style kolorów dla poszczególnych przycisków */
+.menusocials .tt:hover { background-color: #9e9e9e; }
+.menusocials .spoti:hover { background-color: #9e9e9e; }
+.menusocials .instagram:hover { background-color: #9e9e9e; }
+.menusocials .yt:hover { background-color: #9e9e9e; }
+
+
+.buttonlink {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* opcjonalnie do centrowania pionowego */
+    height: 70px; /* opcjonalne */
+  }

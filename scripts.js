@@ -18,10 +18,12 @@ function createLeaf() {
     leaf.classList.add('leaf');
 
     // Ustaw losową pozycję startową z góry
+    
     leaf.style.left = Math.random() * window.innerWidth + 'px';
     leaf.style.top = '-50px'; // Ustawiamy liść, aby zaczynał nad ekranem
     leaf.style.animationDuration = (Math.random() * 8 + 15) + 's'; // Czas spadania (3-8s)
     leaf.style.animationName = 'fall';
+    
 
     document.body.appendChild(leaf);
 
