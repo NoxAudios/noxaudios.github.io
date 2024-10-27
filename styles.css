@@ -346,9 +346,7 @@ footer {
 .buy-button:hover {
     background-color: #7c5f0f;
 }
-.buttonlink:hover{
-    background-color:#7c5f0f ;
-}
+
 
 .indexpromo-image-section {
     position: relative;
@@ -523,4 +521,5 @@ footer {
     justify-content: center;
     align-items: center; /* opcjonalnie do centrowania pionowego */
     height: 70px; /* opcjonalne */
+    background-color:#ffffff;
   }
