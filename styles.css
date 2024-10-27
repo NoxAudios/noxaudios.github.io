@@ -282,7 +282,7 @@ font-style: bold;
 }
 
 .privacy-notice button:hover {
-    background-color: #e4ae1c;
+    background-color: #8a6910;
 }
 
 .hidden {
@@ -344,9 +344,11 @@ footer {
 }
 
 .buy-button:hover {
-    background-color: #e4ae1c;
+    background-color: #7c5f0f;
 }
-
+.buttonlink:hover{
+    background-color:#7c5f0f ;
+}
 
 .indexpromo-image-section {
     position: relative;
@@ -422,12 +424,12 @@ footer {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #e4ae1c;
+    background-color: #c7950c;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 .invite a:hover {
-    background-color: #e4ae1c;
+    background-color: #80610e;
     
 }
 
