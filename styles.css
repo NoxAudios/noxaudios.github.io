@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,6 +20,27 @@ header {
     color: white;
     padding: 1rem;
 }
+
+/* Stylizacja całego paska */
+::-webkit-scrollbar {
+    width: 10px; /* Szerokość paska przewijania */
+  }
+  
+  /* Tło paska przewijania */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Suwak paska przewijania */
+  ::-webkit-scrollbar-thumb {
+    background: #a7a7a7;
+    border-radius: 5px;
+  }
+  
+  /* Suwak przy najechaniu */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4ae1c;
+  }
 
 nav {
     display: flex;
