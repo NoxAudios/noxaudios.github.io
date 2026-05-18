@@ -34,13 +34,15 @@ NAVBAR = """
     <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-900 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors">
-                        4NOX WAV
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="Nox Audios Logo.png" alt="4NOX WAV Logo" class="h-10 w-auto">
+                        <span class="text-xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors hidden sm:block">4NOX WAV</span>
                     </a>
                 </div>
-                <div class="hidden md:flex space-x-10">
+                <div class="hidden md:flex space-x-8 lg:space-x-10">
                     <a href="portfolio.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio</a>
+                    <a href="creators.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Creators</a>
                     <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Socials</a>
                     <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Contact</a>
                 </div>
@@ -56,6 +58,7 @@ NAVBAR = """
         <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-zinc-900">
             <div class="px-4 pt-2 pb-6 space-y-2">
                 <a href="portfolio.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio</a>
+                <a href="creators.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Creators</a>
                 <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Socials</a>
                 <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Contact</a>
             </div>
