@@ -1,0 +1,259 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Hexit Rely</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/ico" href="logohexit.ico">
+    <meta name="description" content="Hexit Rely – Sound Designer and Music Producer specializing in immersive soundscapes, game audio, and electronic music.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- 4NOX WAV Theme Scripts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000000',
+                        zinc: {
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body class="antialiased selection:bg-zinc-800 selection:text-white bg-black text-white" style="font-family: \'Inter\', sans-serif;">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-900 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors">
+                        4NOX WAV
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-10">
+                    <a href="portfolio.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio</a>
+                    <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Socials</a>
+                    <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-zinc-400 hover:text-white focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-zinc-900">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="portfolio.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio</a>
+                <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Socials</a>
+                <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Professional Audio Services</h1>
+                    <p class="hero-subtitle">From game soundtracks to music production, I bring your audio vision to life</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-overview">
+            <div class="container">
+                <h2 class="section-title">What I Offer</h2>
+                <div class="services-grid">
+                    <div class="service-overview-card">
+                        <div class="service-icon">🎵</div>
+                        <h3>Game Audio</h3>
+                        <p>Complete audio solutions for games including soundtracks, sound effects, and interactive audio systems.</p>
+                    </div>
+                    <div class="service-overview-card">
+                        <div class="service-icon">🎧</div>
+                        <h3>Music Production</h3>
+                        <p>Professional music production, mixing, and mastering services for all genres and styles.</p>
+                    </div>
+                    <div class="service-overview-card">
+                        <div class="service-icon">🔊</div>
+                        <h3>Sound Design</h3>
+                        <p>Custom sound design and audio assets for games, films, and multimedia projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-detailed">
+            <div class="container">
+                <h2 class="section-title">What I Offer</h2>
+                <div class="services-detailed-grid">
+                    <div class="service-detailed-card">
+                        <div class="service-icon">🎵</div>
+                        <h3>Game Audio Production</h3>
+                        <p>Complete audio solutions for games including dynamic soundtracks, interactive music systems, and immersive soundscapes that enhance gameplay experience.</p>
+                        <ul class="service-features">
+                            <li>Original game soundtracks</li>
+                            <li>Interactive music systems</li>
+                            <li>Ambient soundscapes</li>
+                            <li>Dynamic audio implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon">🎧</div>
+                        <h3>Music Production & Mixing</h3>
+                        <p>Professional music production services from composition to final mastering, covering all genres with a focus on electronic and cinematic music.</p>
+                        <ul class="service-features">
+                            <li>Original compositions</li>
+                            <li>Professional mixing & mastering</li>
+                            <li>Genre versatility</li>
+                            <li>Collaborative approach</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon">🔊</div>
+                        <h3>Sound Design</h3>
+                        <p>Custom sound effects and audio assets for games, films, and multimedia projects. From subtle ambient sounds to dramatic impact effects.</p>
+                        <ul class="service-features">
+                            <li>Custom sound effects</li>
+                            <li>Foley and ambient sounds</li>
+                            <li>UI/UX audio design</li>
+                            <li>Atmospheric soundscapes</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-detailed-card">
+                        <div class="service-icon">🎮</div>
+                        <h3>Interactive Audio Systems</h3>
+                        <p>Advanced audio programming and implementation for games, including adaptive music systems and real-time audio processing.</p>
+                        <ul class="service-features">
+                            <li>Adaptive music systems</li>
+                            <li>Real-time audio processing</li>
+                            <li>Audio middleware integration</li>
+                            <li>Performance optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Consultation</h3>
+                        <p>We discuss your project requirements, timeline, and vision to ensure perfect alignment.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Production</h3>
+                        <p>I create your audio content with regular updates and collaboration throughout the process.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Review & Refine</h3>
+                        <p>We review the work together and make any necessary adjustments to perfect the final product.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Delivery</h3>
+                        <p>Receive your high-quality audio files in your preferred format, ready for use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Hexit delivered an incredible soundtrack for our game. The music perfectly captured the atmosphere we were looking for."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Game Developer</strong>
+                            <span>Indie Studio</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Professional, creative, and easy to work with. The final mix exceeded our expectations."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Music Producer</strong>
+                            <span>Electronic Artist</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The sound design work was outstanding. Every detail was carefully crafted to enhance the user experience."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Content Creator</strong>
+                            <span>YouTube Channel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Bring Your Project to Life?</h2>
+                    <p>Let's discuss your audio needs and create something amazing together.</p>
+                    <div class="cta-buttons">
+                        <a href="https://example.com/" class="btn btn-primary btn-large">Start Your Project</a>
+                        <a href="portfolio.html" class="btn btn-secondary btn-large">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-zinc-900 text-center mt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <div class="text-xl font-bold tracking-tighter text-zinc-700 mb-4">4NOX WAV</div>
+            <p class="text-zinc-600 text-xs tracking-widest uppercase">
+                &copy; <span id="year"></span> 4NOX WAV. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <div class="privacy-notice" id="privacyNotice">
+        <p>This website uses cookies to improve your experience. <a href="polityka.html">Privacy Policy</a></p>
+        <button id="acceptButton">Accept</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

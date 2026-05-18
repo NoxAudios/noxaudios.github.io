@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4NOX WAV | Premium Sound Design</title>
+    <meta name="description" content="Premium Sound Design & Audio Solutions for Games & Media">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000000',
+                        zinc: {
+                            800: '#27272a',
+                            900: '#18181b',
+                            950: '#09090b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #000000; 
+            color: #ffffff; 
+        }
+        /* Minimalist Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+        
+        /* Subtle glow animation for Hero */
+        @keyframes subtlePulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.5; }
+        }
+        .glow-bg {
+            animation: subtlePulse 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-zinc-800 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-900 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors">
+                        4NOX WAV
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-10">
+                    <a href="#portfolio" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio</a>
+                    <a href="#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Socials</a>
+                    <a href="#support" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Support</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-zinc-400 hover:text-white focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon" stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-zinc-900">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#portfolio" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio</a>
+                <a href="#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Socials</a>
+                <a href="#support" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex items-center justify-center min-h-screen">
+        <!-- Abstract Background Glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-zinc-800/20 rounded-full blur-[100px] pointer-events-none glow-bg"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-6xl md:text-8xl lg:text-[10rem] font-extrabold tracking-tighter text-white mb-6 leading-none">
+                4NOX WAV
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-zinc-300 font-light max-w-3xl mx-auto tracking-wide">
+                Premium Sound Design & Audio Solutions for Games & Media
+            </p>
+            <p class="mt-6 text-sm md:text-base text-zinc-500 max-w-2xl mx-auto leading-relaxed">
+                Elevate your digital experiences with meticulously crafted soundscapes, hard-hitting UI audio, and immersive Foley. Industry-standard quality, zero compromises.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#portfolio" class="px-8 py-4 bg-white text-black font-semibold text-xs md:text-sm uppercase tracking-widest hover:bg-zinc-200 transition-colors duration-300">
+                    Explore Sounds
+                </a>
+                <a href="#support" class="px-8 py-4 bg-transparent border border-zinc-700 text-white font-semibold text-xs md:text-sm uppercase tracking-widest hover:border-white transition-colors duration-300">
+                    Get Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-zinc-950 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 md:mb-24 text-center md:text-left">
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">Featured Audio</h2>
+                <p class="text-zinc-500 max-w-2xl text-lg md:text-xl font-light">Curated collections designed for modern game engines and high-end media productions.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pack 1 -->
+                <div class="group bg-black border border-zinc-800 hover:border-zinc-600 transition-colors duration-500 p-6 flex flex-col h-full">
+                    <div class="h-48 bg-zinc-900 border border-zinc-800 mb-6 flex items-center justify-center relative overflow-hidden group-hover:bg-zinc-800 transition-colors duration-500">
+                        <svg class="w-12 h-12 text-zinc-700 group-hover:text-zinc-400 transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2 tracking-tight">Cybernetic UI Elements</h3>
+                    <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">A comprehensive library of futuristic interface sounds, holograms, and telemetry feedback for sci-fi projects.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">Sci-Fi</span>
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">UI Sounds</span>
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">24-bit WAV</span>
+                    </div>
+                    <button class="w-full py-4 bg-zinc-900 hover:bg-white hover:text-black border border-zinc-800 hover:border-white text-zinc-300 font-medium text-xs tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        Listen / Preview
+                    </button>
+                </div>
+
+                <!-- Pack 2 -->
+                <div class="group bg-black border border-zinc-800 hover:border-zinc-600 transition-colors duration-500 p-6 flex flex-col h-full">
+                    <div class="h-48 bg-zinc-900 border border-zinc-800 mb-6 flex items-center justify-center relative overflow-hidden group-hover:bg-zinc-800 transition-colors duration-500">
+                        <svg class="w-12 h-12 text-zinc-700 group-hover:text-zinc-400 transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2 tracking-tight">Dark Matter Ambience</h3>
+                    <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">Deep, evolving drones and unsettling atmospheric textures perfect for horror, thrillers, and space exploration.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">Ambient</span>
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">Horror</span>
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">Seamless Loops</span>
+                    </div>
+                    <button class="w-full py-4 bg-zinc-900 hover:bg-white hover:text-black border border-zinc-800 hover:border-white text-zinc-300 font-medium text-xs tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        Listen / Preview
+                    </button>
+                </div>
+
+                <!-- Pack 3 -->
+                <div class="group bg-black border border-zinc-800 hover:border-zinc-600 transition-colors duration-500 p-6 flex flex-col h-full">
+                    <div class="h-48 bg-zinc-900 border border-zinc-800 mb-6 flex items-center justify-center relative overflow-hidden group-hover:bg-zinc-800 transition-colors duration-500">
+                        <svg class="w-12 h-12 text-zinc-700 group-hover:text-zinc-400 transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2 tracking-tight">Kinetic Impacts</h3>
+                    <p class="text-zinc-500 text-sm mb-6 flex-grow leading-relaxed">Punchy hits, whooshes, and arcane spell sound effects tailored for action RPGs and intense cinematic moments.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">Cinematic</span>
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">Combat</span>
+                        <span class="px-2 py-1 text-xs font-medium text-zinc-400 border border-zinc-800">One-Shots</span>
+                    </div>
+                    <button class="w-full py-4 bg-zinc-900 hover:bg-white hover:text-black border border-zinc-800 hover:border-white text-zinc-300 font-medium text-xs tracking-widest uppercase transition-all duration-300 flex items-center justify-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        Listen / Preview
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="socials" class="py-24 bg-black border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white mb-16">Network</h2>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                <!-- Social Icons via text/border approach for minimalism -->
+                <a href="#" class="group flex flex-col items-center gap-4">
+                    <div class="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                        <span class="font-bold text-lg text-zinc-500 group-hover:text-black transition-colors duration-300">SC</span>
+                    </div>
+                    <span class="text-xs tracking-widest uppercase text-zinc-500 group-hover:text-white transition-colors duration-300">SoundCloud</span>
+                </a>
+                <a href="#" class="group flex flex-col items-center gap-4">
+                    <div class="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                        <span class="font-bold text-lg text-zinc-500 group-hover:text-black transition-colors duration-300">YT</span>
+                    </div>
+                    <span class="text-xs tracking-widest uppercase text-zinc-500 group-hover:text-white transition-colors duration-300">YouTube</span>
+                </a>
+                <a href="#" class="group flex flex-col items-center gap-4">
+                    <div class="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                        <span class="font-bold text-lg text-zinc-500 group-hover:text-black transition-colors duration-300">DC</span>
+                    </div>
+                    <span class="text-xs tracking-widest uppercase text-zinc-500 group-hover:text-white transition-colors duration-300">Discord</span>
+                </a>
+                <a href="#" class="group flex flex-col items-center gap-4">
+                    <div class="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                        <span class="font-bold text-lg text-zinc-500 group-hover:text-black transition-colors duration-300">IN</span>
+                    </div>
+                    <span class="text-xs tracking-widest uppercase text-zinc-500 group-hover:text-white transition-colors duration-300">LinkedIn</span>
+                </a>
+                <a href="#" class="group flex flex-col items-center gap-4">
+                    <div class="w-16 h-16 rounded-full border border-zinc-800 bg-zinc-950 flex items-center justify-center group-hover:border-white group-hover:bg-white transition-all duration-300">
+                        <span class="font-bold text-lg text-zinc-500 group-hover:text-black transition-colors duration-300">GH</span>
+                    </div>
+                    <span class="text-xs tracking-widest uppercase text-zinc-500 group-hover:text-white transition-colors duration-300">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Center Section -->
+    <section id="support" class="py-24 bg-zinc-950 border-t border-zinc-900">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">Support Center</h2>
+                <p class="text-zinc-500 text-lg font-light">Asset store verification hub & frequently asked questions.</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-zinc-800 bg-black overflow-hidden transition-colors hover:border-zinc-700">
+                    <button class="w-full px-6 py-6 text-left flex justify-between items-center focus:outline-none faq-btn group">
+                        <span class="font-medium text-white tracking-wide group-hover:text-zinc-300 transition-colors">What does the commercial license cover?</span>
+                        <svg class="w-5 h-5 text-zinc-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content">
+                        <p class="text-zinc-400 pb-6 text-sm leading-relaxed">
+                            Our standard commercial license allows you to use the audio assets in unlimited commercial projects, including video games, films, YouTube videos, and podcasts. You may not resell, redistribute, or re-package the raw audio files as standalone assets.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-zinc-800 bg-black overflow-hidden transition-colors hover:border-zinc-700">
+                    <button class="w-full px-6 py-6 text-left flex justify-between items-center focus:outline-none faq-btn group">
+                        <span class="font-medium text-white tracking-wide group-hover:text-zinc-300 transition-colors">What formats are the audio files delivered in?</span>
+                        <svg class="w-5 h-5 text-zinc-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content">
+                        <p class="text-zinc-400 pb-6 text-sm leading-relaxed">
+                            All our asset packs are delivered in industry-standard 24-bit / 96kHz or 44.1kHz WAV format for maximum fidelity. We also provide optimized OGG formats where applicable for direct game engine integration (Unity, Unreal Engine, Godot).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-zinc-800 bg-black overflow-hidden transition-colors hover:border-zinc-700">
+                    <button class="w-full px-6 py-6 text-left flex justify-between items-center focus:outline-none faq-btn group">
+                        <span class="font-medium text-white tracking-wide group-hover:text-zinc-300 transition-colors">What is your refund policy?</span>
+                        <svg class="w-5 h-5 text-zinc-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="px-6 py-0 max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content">
+                        <p class="text-zinc-400 pb-6 text-sm leading-relaxed">
+                            Due to the digital nature of our products, we generally do not offer refunds once the files have been downloaded. However, if you experience technical issues with the files or accidental duplicate purchases, please contact our support team to resolve the matter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="mt-20 p-8 border border-zinc-800 bg-black text-center">
+                <p class="text-zinc-500 mb-4 text-sm uppercase tracking-widest">Direct Contact</p>
+                <a href="mailto:contact@4noxwav.com" class="text-2xl md:text-3xl font-bold text-white hover:text-zinc-300 transition-colors tracking-tight">
+                    contact@4noxwav.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-zinc-900 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <div class="text-xl font-bold tracking-tighter text-zinc-700 mb-4">4NOX WAV</div>
+            <p class="text-zinc-600 text-xs tracking-widest uppercase">
+                &copy; <span id="year"></span> 4NOX WAV. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Vanilla JS Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Dynamic Year in Footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // 2. Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when a link is clicked
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // 3. FAQ Accordion Logic
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('.faq-icon');
+                    const isOpen = content.style.maxHeight;
+                    
+                    // Close all FAQs first
+                    document.querySelectorAll('.faq-content').forEach(item => {
+                        item.style.maxHeight = null;
+                    });
+                    document.querySelectorAll('.faq-icon').forEach(item => {
+                        item.classList.remove('rotate-180');
+                    });
+                    
+                    // If it wasn't open, open it
+                    if (!isOpen) {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+
+            // 4. Subtle Navbar Background Change on Scroll
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-lg', 'shadow-black/50');
+                } else {
+                    nav.classList.remove('shadow-lg', 'shadow-black/50');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
