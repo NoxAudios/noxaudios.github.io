@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hexit Rely</title>
+    <title>Portfolio Game Dev - Hexit Rely</title>
     <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="icon" type="image/ico" href="logohexit.ico">
+
 <meta name="description" content="Hexit Rely – Sound Designer and Music Producer specializing in immersive soundscapes, game audio, and electronic music.">
    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -43,6 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </script>
 
+    <link rel="icon" type="image/png" href="Nox Audios Logo.png">
 </head>
 <body class="antialiased selection:bg-zinc-800 selection:text-white bg-black text-white" style="font-family: \'Inter\', sans-serif;">
     <!-- Google Tag Manager (noscript) -->
@@ -55,14 +56,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors">
-                        4NOX WAV
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="Nox Audios Logo.png" alt="4NOX WAV Logo" class="h-10 w-auto">
+                        <span class="text-xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors hidden sm:block">4NOX WAV</span>
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-10">
-                    <a href="portfolio.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio</a>
-                    <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Socials</a>
-                    <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Contact</a>
+                    <a href="portfolio.html" class="text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio Game Dev</a>
+                    <a href="portfolio-muzyczne.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio Muzyczne</a>
+                    <a href="creators.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Twórcy</a>
+                    <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Social Media</a>
+                    <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Kontakt</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-zinc-400 hover:text-white focus:outline-none p-2">
@@ -75,58 +79,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-zinc-900">
             <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="portfolio.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio</a>
-                <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Socials</a>
-                <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Contact</a>
+                <a href="portfolio.html" class="mobile-link block py-3 text-base font-medium text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio Game Dev</a>
+                <a href="portfolio-muzyczne.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio Muzyczne</a>
+                <a href="creators.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Twórcy</a>
+                <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Social Media</a>
+                <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Kontakt</a>
             </div>
         </div>
     </nav>
 
 
     <main>
-        <section class="portfolio-hero">
+        <section style="padding: 2rem 0; background-color: var(--bg-main); border-top: none;">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">My Creative Portfolio</h1>
-                    <p class="hero-subtitle">Explore my latest projects in game audio, music production, and sound design</p>
-                </div>
+                <h1 class="hero-title" style="font-size: 2rem; margin-bottom: 0.5rem;">Portfolio Game Dev</h1>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Audio do gier, sound design i produkcja muzyki</p>
             </div>
         </section>
-        <section class="audio-showcase">
-            <div class="container">
-                <h2 class="section-title">Featured Audio Work</h2>
-                <div class="audio-grid">
-                    <div class="audio-item">
-                        <div class="audio-player">
-                            <h3>Game Soundtracks</h3>
-                            <p>Immersive musical experiences for gaming</p>
-                            <a href="https://www.youtube.com/watch?v=r00VQe6GCdA" target="_blank" class="btn btn-primary">Listen on YouTube</a>
-                        </div>
-                    </div>
-                    <div class="audio-item">
-                        <div class="audio-player">
-                            <h3>Spirits Among The Trees</h3>
-                            <p>Jelly Jam 2024 - Atmospheric Soundtrack</p>
-                            <a href="https://www.youtube.com/watch?v=yUFZ2jWuVfQ" target="_blank" class="btn btn-primary">Listen on YouTube</a>
-                        </div>
-                    </div>
-                    <div class="audio-item">
-                        <div class="audio-player">
-                            <h3>Orbs And Spirits</h3>
-                            <p>Davsky Portfolio - Ambient Soundscape</p>
-                            <a href="https://www.youtube.com/watch?v=YKzzDYcLTbs" target="_blank" class="btn btn-primary">Listen on YouTube</a>
-                        </div>
-                    </div>
-                    <div class="audio-item">
-                        <div class="audio-player">
-                            <h3>Epic Gaming Soundtrack</h3>
-                            <p>Hexit Rely - Cinematic Composition</p>
-                            <a href="https://www.youtube.com/watch?v=tNQyWrBgXpE" target="_blank" class="btn btn-primary">Listen on YouTube</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
        
 <!-- 
@@ -149,58 +119,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-        <section class="releases-section">
-            <div class="container">
-                <h2 class="section-title">Latest Releases</h2>
-                <div class="releases-grid">
-
-                    <div class="release-card">
-                        <div class="release-image">
-                            <img src="hexit/mmtlddiya.png"" alt="Diya My Mother Told ME">
-                            <div class="release-overlay">
-                                <a href="https://open.spotify.com/album/7DMzV5bFegW3tYEe6uf1kH" target="_blank" class="btn btn-primary">Listen Now</a>
-                            </div>
-                        </div>
-                        <div class="release-content">
-                            <h3>DIYA - MY MOTHER TOLD ME</h3>
-                            <p>Slavic Cover</p>
-                            <div class="release-platforms">
-                                <span class="release-platform">Spotify</span>
-                               
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="release-card">
-                        <div class="release-image">
-                            <img src="hexit/mmtlddiya.png"" alt="Diya My Mother Told ME">
-                            <div class="release-overlay">
-                                <a href="https://www.youtube.com/watch?v=5m4mH2_ReVY" target="_blank" class="btn btn-primary">Listen Now</a>
-                            </div>
-                        </div>
-                        <div class="release-content">
-                            <h3>DIYA - MY MOTHER TOLD ME</h3>
-                            <p>Slavic Cover</p>
-                            <div class="release-platforms">
-                                <span class="release-platform">YouTube</span>
-                               
-                            </div>
-                        </div>
-                    </div>      
-
-                    
-                </div>
-            </div>
-        </section>
-
 
 
 <section class="skills-section">
-  <h2>Skills</h2>
+  <h2>Umiejętności</h2>
 
   <div class="skill">
     <i class="icon fas fa-sliders-h"></i>
-    <span class="skill-name">Mixing</span>
+    <span class="skill-name">Miksowanie</span>
     <div class="dots">
       <span class="dot filled"></span>
       <span class="dot filled"></span>
@@ -218,13 +144,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="dot filled"></span>
       <span class="dot filled"></span>
       <span class="dot filled"></span>
-      <span class="dot filled"></span>
+      <span class="dot"></span>
     </div>
   </div>
 
   <div class="skill">
     <i class="icon fas fa-microphone"></i>
-    <span class="skill-name">Audio Recording</span>
+    <span class="skill-name">Nagrywanie Audio</span>
     <div class="dots">
       <span class="dot filled"></span>
       <span class="dot filled"></span>
@@ -325,21 +251,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="projects-section">
             <div class="container">
-                <h2 class="section-title">Game Development Projects</h2>
+                <h2 class="section-title">Projekty Game Dev</h2>
                 <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="hexit/wiskers/logo.png" alt="Wiskers & Magic">
+                            <div class="project-overlay">
+                                <a href="wiskers.html" class="btn btn-primary">Zobacz Projekt</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Wiskers & Magic</h3>
+                            <p>Projekt od ekipy 8bitJelly</p>
+                            <span class="project-tag">Produkcja Muzyczna</span>
+                            <span class="project-tag">Soundtrack</span>
+                        </div>
+                    </div>
 
                     <div class="project-card">
                         <div class="project-image">
                             <img src="hexit/rapid 01/image.png" alt="Rapid 01">
                             <div class="project-overlay">
-                                <a href="rapid01.html" class="btn btn-primary">View Project</a>
+                                <a href="rapid01.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Arcade Racing 3D</h3>
-                            <p>Project RAPID of 8bit jelly team</p>
+                            <p>Projekt RAPID od ekipy 8bit jelly</p>
                             <span class="project-tag">Sound Design</span>
-                             <span class="project-tag">Music Production</span>
+                             <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">Unity</span>
                         </div>
                     </div>
@@ -348,12 +289,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/VOXTENsOTd.webp" alt="Shovel of the Damned">
                             <div class="project-overlay">
-                                <a href="SotD.html" class="btn btn-primary">View Project</a>
+                                <a href="SotD.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Shovel of the Damned</h3>
-                            <p>VOXTEN - Horror Game Soundtrack</p>
+                            <p>VOXTEN - Ścieżka Dźwiękowa do Horroru</p>
                             <span class="project-tag">Sound Design</span>
                         </div>
                     </div>
@@ -362,15 +303,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/ELmini.webp" alt="Elemental Labirynth">
                             <div class="project-overlay">
-                                <a href="EL.html" class="btn btn-primary">View Project</a>
+                                <a href="EL.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Elemental Labirynth</h3>
-                            <p>Fantasy Adventure Soundtrack</p>
-                            <span class="project-tag">Music Production</span>
+                            <p>Ścieżka Dźwiękowa do Gry Przygodowej Fantasy</p>
+                            <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">F Mod</span>
-                            <span class="project-taggreen">commercial</span>
+                            <span class="project-taggreen">komercyjny</span>
                         </div>
                     </div>
 
@@ -378,16 +319,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/platformer.webp" alt="Orbs and Spirits">
                             <div class="project-overlay">
-                                <a href="orbsandspirits.html" class="btn btn-primary">View Project</a>
+                                <a href="orbsandspirits.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Orbs and Spirits</h3>
-                            <p>8BitJelly - Platformer Game Audio</p>
-                            <span class="project-tag">Music Production</span>
+                            <p>8BitJelly - Audio do Platformówki</p>
+                            <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">Sound Design</span>
                             <span class="project-tag">Unity</span>
-                            <span class="project-tagred">unfinished</span>
+                            <span class="project-tagred">niedokończony</span>
                         </div>
                     </div>
 
@@ -397,13 +338,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/marsfall.webp" alt="Marsfall">
                             <div class="project-overlay">
-                                <a href="marsfall.html" class="btn btn-primary">View Project</a>
+                                <a href="marsfall.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Marsfall</h3>
-                            <p>Brackeys 2024 - Sci-Fi Game Audio</p>
-                             <span class="project-tag">Music Production</span>
+                            <p>Brackeys 2024 - Audio do Gry Sci-Fi</p>
+                             <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">Sound Design</span>
                             <span class="project-tag">Unity</span>
                         </div>
@@ -413,13 +354,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/hine gif gierki.gif" alt="Spirits Among the trees">
                             <div class="project-overlay">
-                                <a href="spirit.html" class="btn btn-primary">View Project</a>
+                                <a href="spirit.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Spirits Among the Trees</h3>
-                            <p>Jelly Jam 2024 - Atmospheric Game</p>
-                            <span class="project-tag">Music Production</span>
+                            <p>Jelly Jam 2024 - Atmosferyczna Gra</p>
+                            <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">Sound Design</span>
                             <span class="project-tag">Unity</span>
                         </div>
@@ -429,13 +370,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/forestmaze/forestmazelogo.webp" alt="Forest maze">
                             <div class="project-overlay">
-                                <a href="forestmaze.html" class="btn btn-primary">View Project</a>
+                                <a href="forestmaze.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Forest Maze</h3>
-                            <p>Jelly Jam 2024 - Puzzle Game Audio</p>
-                            <span class="project-tag">Music Production</span>
+                            <p>Jelly Jam 2024 - Audio do Gry Logicznej</p>
+                            <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">Sound Design</span>
                             <span class="project-tag">Unreal</span>
                         </div>
@@ -445,13 +386,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="project-image">
                             <img src="hexit/HexForest/hf logo.webp" alt="Hex Forest">
                             <div class="project-overlay">
-                                <a href="hexforest.html" class="btn btn-primary">View Project</a>
+                                <a href="hexforest.html" class="btn btn-primary">Zobacz Projekt</a>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3>Hex Forest</h3>
-                            <p>Jelly Jam 2024 - Strategy Game Audio</p>
-                             <span class="project-tag">Music Production</span>
+                            <p>Jelly Jam 2024 - Audio do Gry Strategicznej</p>
+                             <span class="project-tag">Produkcja Muzyczna</span>
                             <span class="project-tag">Sound Design</span>
                             <span class="project-tag">Unity</span>
                         </div>
@@ -462,14 +403,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <section class="video-showcase">
             <div class="container">
-                <h2 class="section-title">Behind the Scenes</h2>
+                <h2 class="section-title">Za Kulisami</h2>
                 <div class="video-container">
                     <iframe width="100%" height="500" src="https://www.youtube.com/embed/Pg1FvctWbpc?si=w-oeki08823Nk96u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
-
+        <div class="mt-16 flex justify-center pb-16">
+            <a href="portfolio-muzyczne.html" class="px-8 py-4 border border-zinc-700 text-white font-semibold text-xs md:text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-300">
+                Więcej prac znajdziesz w portfolio muzycznym
+            </a>
+        </div>
 
     </main>
 
@@ -481,7 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <div class="text-xl font-bold tracking-tighter text-zinc-700 mb-4">4NOX WAV</div>
             <p class="text-zinc-600 text-xs tracking-widest uppercase">
-                &copy; <span id="year"></span> 4NOX WAV. All rights reserved.
+                &copy; <span id="year"></span> 4NOX WAV. Wszelkie prawa zastrzeżone.
             </p>
         </div>
     </footer>
@@ -489,8 +434,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <div class="privacy-notice" id="privacyNotice">
-        <p>This website uses cookies to improve your experience. <a href="polityka.html">Privacy Policy</a></p>
-        <button id="acceptButton">Accept</button>
+        <p>Ta strona używa plików cookie, aby poprawić Twoje wrażenia. <a href="polityka.html">Polityka Prywatności</a></p>
+        <button id="acceptButton">Akceptuj</button>
     </div>
 
     <script src="scripts.js"></script>

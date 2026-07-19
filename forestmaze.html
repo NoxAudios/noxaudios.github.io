@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest Maze - Olaf Hexit Rely Zawadzki</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/ico" href="logohexit.ico">
+    
     <meta name="description" content="Hexit Rely – Sound Designer and Music Producer specializing in immersive soundscapes, game audio, and electronic music.">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -36,6 +36,7 @@
         }
     </script>
 
+    <link rel="icon" type="image/png" href="Nox Audios Logo.png">
 </head>
 <body class="antialiased selection:bg-zinc-800 selection:text-white bg-black text-white" style="font-family: \'Inter\', sans-serif;">
     
@@ -44,14 +45,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors">
-                        4NOX WAV
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="Nox Audios Logo.png" alt="4NOX WAV Logo" class="h-10 w-auto">
+                        <span class="text-xl font-extrabold tracking-tighter text-white hover:text-zinc-300 transition-colors hidden sm:block">4NOX WAV</span>
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-10">
-                    <a href="portfolio.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio</a>
-                    <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Socials</a>
-                    <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Contact</a>
+                    <a href="portfolio.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio Game Dev</a>
+                    <a href="portfolio-muzyczne.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Portfolio Muzyczne</a>
+                    <a href="creators.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Twórcy</a>
+                    <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Social Media</a>
+                    <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Kontakt</a>
                 </div>
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-zinc-400 hover:text-white focus:outline-none p-2">
@@ -64,9 +68,11 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-zinc-900">
             <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="portfolio.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio</a>
-                <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Socials</a>
-                <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Contact</a>
+                <a href="portfolio.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio Game Dev</a>
+                <a href="portfolio-muzyczne.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Portfolio Muzyczne</a>
+                <a href="creators.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Twórcy</a>
+                <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Social Media</a>
+                <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Kontakt</a>
             </div>
         </div>
     </nav>
@@ -78,10 +84,10 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <h1 class="hero-title">Forest Maze</h1>
-                        <p class="hero-subtitle">Nature-inspired sound design for a magical forest adventure game</p>
+                        <p class="hero-subtitle">Sound design inspirowany naturą dla magicznej przygodowej gry leśnej</p>
                         <div class="hero-buttons">
-                            <a href="https://keyess.itch.io/forestmaze" class="btn btn-primary btn-large">Play on Itch.io</a>
-                            <a href="portfolio.html" class="btn btn-secondary btn-large">Back to Portfolio</a>
+                            <a href="https://keyess.itch.io/forestmaze" class="btn btn-primary btn-large">Zagraj na Itch.io</a>
+                            <a href="portfolio.html" class="btn btn-secondary btn-large">Powrót do Portfolio</a>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -93,11 +99,11 @@
 
         <section class="about-section">
             <div class="container">
-                <h2 class="section-title">About the Sound Design</h2>
+                <h2 class="section-title">O Sound Designie</h2>
                 <div class="about-content">
                     <div class="about-description">
-                        <p>All sounds in this game were created by me and my friend Dawid Blacharski. We started from scratch, crafting immersive nature sounds including trees, footsteps, magical elements, pickups, clicks, items, and much more.</p>
-                        <p>Below you can listen to the sounds I created for this enchanting forest adventure.</p>
+                        <p>Wszystkie dźwięki w tej grze zostały stworzone przeze mnie i mojego przyjaciela Dawida Blacharskiego. Zaczęliśmy od zera, tworząc wciągające dźwięki natury, w tym drzewa, kroki, elementy magiczne, kliknięcia i wiele więcej.</p>
+                        <p>Poniżej możesz posłuchać dźwięków, które stworzyłem dla tej urokliwej leśnej przygody.</p>
                     </div>
                     <div class="about-image">
                         <img src="hexit/forestmaze/forestmaze.png" alt="Forest Maze Gameplay" class="about-img">
@@ -108,14 +114,14 @@
 
         <section class="audio-showcase">
             <div class="container">
-                <h2 class="section-title">Sound Effects</h2>
+                <h2 class="section-title">Efekty Dźwiękowe</h2>
                 <div class="audio-grid">
                     <div class="audio-item">
                         <h3>Pickup Sound</h3>
                         <p>Item collection sound effect</p>
                         <audio controls style="width: 100%; margin-top: 1rem;">
                             <source src="hexit/forestmaze/Pikcu v2.wav" type="audio/wav">
-                            Your browser does not support the audio element.
+                            Twoja przeglądarka nie obsługuje elementu audio.
                         </audio>
                     </div>
                     <div class="audio-item">
@@ -123,7 +129,7 @@
                         <p>Environmental interaction sound</p>
                         <audio controls style="width: 100%; margin-top: 1rem;">
                             <source src="hexit/forestmaze/korki poco komu programiści.wav" type="audio/wav">
-                            Your browser does not support the audio element.
+                            Twoja przeglądarka nie obsługuje elementu audio.
                         </audio>
                     </div>
                     <div class="audio-item">
@@ -131,7 +137,7 @@
                         <p>Another pickup variation</p>
                         <audio controls style="width: 100%; margin-top: 1rem;">
                             <source src="hexit/forestmaze/item pickum poco kompu programisci.wav" type="audio/wav">
-                            Your browser does not support the audio element.
+                            Twoja przeglądarka nie obsługuje elementu audio.
                         </audio>
                     </div>
                     <div class="audio-item">
@@ -139,7 +145,7 @@
                         <p>Level completion sound</p>
                         <audio controls style="width: 100%; margin-top: 1rem;">
                             <source src="hexit/forestmaze/end of track.wav" type="audio/wav">
-                            Your browser does not support the audio element.
+                            Twoja przeglądarka nie obsługuje elementu audio.
                         </audio>
                     </div>
                 </div>
@@ -148,14 +154,14 @@
 
         <section class="audio-showcase" style="background: var(--bg-primary);">
             <div class="container">
-                <h2 class="section-title">Soundtrack</h2>
+                <h2 class="section-title">Ścieżka Dźwiękowa</h2>
                 <div class="audio-grid">
                     <div class="audio-item">
                         <h3>Magical Ambient</h3>
                         <p>Atmospheric background music</p>
                         <audio controls style="width: 100%; margin-top: 1rem;">
                             <source src="hexit/forestmaze/Ambent magiczny poco komu rpogramisci.wav" type="audio/wav">
-                            Your browser does not support the audio element.
+                            Twoja przeglądarka nie obsługuje elementu audio.
                         </audio>
                     </div>
                 </div>
@@ -164,7 +170,7 @@
 
         <section class="gallery-section">
             <div class="container">
-                <h2 class="section-title">Game Screenshots</h2>
+                <h2 class="section-title">Zrzuty Ekranu z Gry</h2>
                 <div class="compact-gallery">
                     <img src="hexit/forestmaze/fm1.webp" alt="Forest Maze Screenshot 1">
                     <img src="hexit/forestmaze/fm2.webp" alt="Forest Maze Screenshot 2">
@@ -175,8 +181,8 @@
     </main>
 
     <div class="privacy-notice" id="privacyNotice">
-        <p>Our website uses cookies to improve the quality of services. Read our <a href="polityka.html">Privacy Policy</a>.</p>
-        <button id="acceptButton">Accept</button>
+        <p>Nasza strona używa plików cookie, aby poprawić jakość usług. Przeczytaj naszą <a href="polityka.html">Politykę Prywatności</a>.</p>
+        <button id="acceptButton">Akceptuj</button>
     </div>
 
     <script src="scripts.js"></script>
@@ -189,7 +195,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
             <div class="text-xl font-bold tracking-tighter text-zinc-700 mb-4">4NOX WAV</div>
             <p class="text-zinc-600 text-xs tracking-widest uppercase">
-                &copy; <span id="year"></span> 4NOX WAV. All rights reserved.
+                &copy; <span id="year"></span> 4NOX WAV. Wszelkie prawa zastrzeżone.
             </p>
         </div>
     </footer>
