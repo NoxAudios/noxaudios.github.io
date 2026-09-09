@@ -496,3 +496,115 @@ audio {
     cursor: pointer;
     font-weight: 600;
 }
+
+/* ===================================================
+   4NOX WAV Rebuild - Custom Enhancements
+   =================================================== */
+
+/* Smooth Audio Player Styling */
+.audio-player-widget {
+    background-color: #09090b;
+    border: 1px solid #27272a;
+    transition: all 0.25s ease;
+}
+.audio-player-widget:hover {
+    border-color: #3f3f46;
+}
+.audio-player-widget audio {
+    width: 100%;
+    height: 34px;
+    filter: invert(1) hue-rotate(180deg);
+    opacity: 0.85;
+}
+.audio-player-widget audio:hover {
+    opacity: 1;
+}
+
+/* Category Filter Tabs */
+.filter-tab-btn {
+    transition: all 0.2s ease;
+}
+.filter-tab-btn.active {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+/* Pricing Card Highlights */
+.pricing-card-featured {
+    border-color: #52525b;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.04), rgba(9,9,11,1) 70%);
+}
+
+/* Subtle pulse glow for key CTAs */
+@keyframes ctaGlow {
+    0%, 100% { box-shadow: 0 0 15px -3px rgba(255, 255, 255, 0.15); }
+    50% { box-shadow: 0 0 25px 2px rgba(255, 255, 255, 0.28); }
+}
+.btn-glow {
+    animation: ctaGlow 4s infinite ease-in-out;
+}
+
+/* Custom form select styling */
+select.custom-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a1a1aa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem;
+}
+
+/* Portfolio Nav Dropdown */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background-color: #09090b;
+    border: 1px solid #27272a;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 60;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* =====================================================
+   HERO STUDIO BACKGROUND — studio photo as hero bg
+   ===================================================== */
+.hero-studio-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 35%;
+    background-attachment: fixed;
+    filter: brightness(0.45) saturate(0.7);
+    z-index: 0;
+    will-change: transform;
+}
+
+@media (max-width: 768px) {
+    .hero-studio-bg {
+        background-attachment: scroll;
+        background-position: center center;
+    }
+}
+
+.hero-studio-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.55) 100%),
+        linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.75) 100%);
+}
