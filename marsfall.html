@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -77,6 +77,11 @@
                     <a href="creators.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Twórcy</a>
                     <a href="index.html#socials" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Social Media</a>
                     <a href="contact.html" class="text-zinc-400 hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase font-medium">Kontakt</a>
+                    
+                    <!-- Language Switcher (Desktop) -->
+                    <button onclick="I18N.toggle()" class="lang-toggle-btn ml-2 px-2.5 py-1 text-xs font-mono tracking-wider border border-zinc-800 hover:border-zinc-500 rounded bg-zinc-950/80 transition-colors flex items-center gap-1 focus:outline-none cursor-pointer" aria-label="Switch to English">
+                        <span class="text-white font-bold">PL</span><span class="text-zinc-600">/</span><span class="text-zinc-500 font-normal">EN</span>
+                    </button>
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -103,6 +108,16 @@
                 <a href="creators.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Twórcy</a>
                 <a href="index.html#socials" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white border-b border-zinc-900 tracking-widest uppercase">Social Media</a>
                 <a href="contact.html" class="mobile-link block py-3 text-base font-medium text-zinc-400 hover:text-white tracking-widest uppercase">Kontakt</a>
+                
+                <!-- Language Toggle in Mobile Panel -->
+                <div class="pt-3 border-t border-zinc-900">
+                    <button onclick="I18N.toggle()" class="flex items-center justify-between w-full py-2.5 px-3 text-sm font-mono text-zinc-300 hover:text-white border border-zinc-800 rounded bg-zinc-950/80 transition-colors focus:outline-none cursor-pointer">
+                        <span class="flex items-center gap-2">🌐 <span>Język / Language:</span></span>
+                        <span class="lang-toggle-btn text-xs px-2 py-0.5 rounded bg-zinc-900 border border-zinc-800">
+                            <span class="text-white font-bold">PL</span><span class="text-zinc-600">/</span><span class="text-zinc-500 font-normal">EN</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -171,6 +186,7 @@
     </div>
 
     <script src="scripts.js"></script>
+    <script src="i18n.js"></script>
 
     
     <!-- Footer -->

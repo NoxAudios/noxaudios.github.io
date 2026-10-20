@@ -608,3 +608,94 @@ select.custom-select {
         radial-gradient(ellipse at center, transparent 20%, rgba(0,0,0,0.55) 100%),
         linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.75) 100%);
 }
+
+/* =================================================
+   MailerLite Newsletter – Dark Theme Overrides
+   ================================================= */
+#newsletter .ml-form-embedContainer {
+    width: 100% !important;
+}
+
+#newsletter .ml-form-embedWrapper {
+    background-color: transparent !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+}
+
+#newsletter .ml-form-embedBody {
+    padding: 24px 24px 0 !important;
+}
+
+#newsletter .ml-form-embedContent h4 {
+    display: none !important;
+}
+
+#newsletter .ml-form-embedContent p {
+    display: none !important;
+}
+
+#newsletter .ml-form-embedContent {
+    margin: 0 !important;
+}
+
+#newsletter .ml-form-fieldRow input[type="email"] {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 1px solid #27272a !important;
+    border-radius: 0 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    padding: 14px 16px !important;
+    transition: border-color 0.3s ease !important;
+}
+
+#newsletter .ml-form-fieldRow input[type="email"]:focus {
+    border-color: #ffffff !important;
+    outline: none !important;
+}
+
+#newsletter .ml-form-fieldRow input[type="email"]::placeholder {
+    color: #71717a !important;
+}
+
+#newsletter .ml-form-embedSubmit button {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    padding: 14px 20px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+#newsletter .ml-form-embedSubmit button:hover {
+    background-color: #e4e4e7 !important;
+}
+
+#newsletter .ml-form-successContent h4 {
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif !important;
+    display: block !important;
+}
+
+#newsletter .ml-form-successContent p {
+    color: #a1a1aa !important;
+    font-family: 'Inter', sans-serif !important;
+    display: block !important;
+}
+
+#newsletter .ml-form-checkboxRow .label-description,
+#newsletter .ml-form-checkboxRow .label-description p,
+#newsletter .ml-form-checkboxRow label p {
+    color: #71717a !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+#newsletter .ml-form-checkboxRow label a {
+    color: #a1a1aa !important;
+}
